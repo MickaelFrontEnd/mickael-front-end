@@ -1,0 +1,11 @@
+mixin card(options)
+  - var title = options.title || ""
+  - var description = options.description || ""
+  - var pictos = options.pictos || "fa fa-mobile"
+  - var classes = options.classes || "text-center"
+  - var theme = options.theme || "1"
+
+  .card(class = classes data-theme = theme)
+    i.card-visual(class = pictos)
+    h3.card-title #{title}
+    p.card-description #{description}

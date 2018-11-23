@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+header {
+  background: $primary;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  li {
+    margin: 0 20px;
+    padding-bottom: 4px;
+    position: relative;
+    a {
+      color: white;
+      font-size: 15px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      
+      height: 2px;
+      width: 100%;
+
+      background: white;
+
+      transform: scaleX(0);
+      transition: 300ms linear all;
+    }
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      } 
+    }
+    &.active {
+      &::after {
+        transform: scaleX(1);
+      } 
+    }
+  }
+}

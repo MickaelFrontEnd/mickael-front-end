@@ -1,0 +1,25 @@
+body {
+  font-family: 'Montserrat', 'Sans serif';
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 28px;
+
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.primary-color {
+  color: $primary;
+}

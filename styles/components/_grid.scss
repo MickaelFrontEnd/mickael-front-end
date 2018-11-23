@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+[data-col="2"] {
+  .col {
+    width: calc(100% / 2);
+  }
+}
+[data-col="3"] {
+  .col {
+    width: calc(100% / 3);
+  }
+}  
+[data-col="6"] {
+  .col {
+    width: calc(100% / 6);
+  }
+}  

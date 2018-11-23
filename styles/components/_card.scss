@@ -1,0 +1,61 @@
+.intro {
+  padding: 20px;
+  padding-left: 150px; 
+  &-inverse {
+    padding-right: 150px;
+    padding-left: 20px;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  .item {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: bold;
+    }
+    &:first-child {
+      align-self: flex-start;
+      img {
+        margin-right: 50px;
+      }
+      
+    }
+    &:last-child {
+      align-self: flex-end;
+      img {
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+.tech {
+  padding-left: 150px;
+  img {
+    margin: 20px;
+  }
+}
+
+#exp, #contact {
+  background-color: $primary;
+  h2 {
+    color: $secondary;
+  }
+}
+
+#blog {
+  color: $primary;
+  p {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+}

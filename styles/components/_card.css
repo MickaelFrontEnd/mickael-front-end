@@ -1,0 +1,11 @@
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .card-container[data-row="3"] .card {
+    margin: 50px;
+    width: calc(100% / 3); }

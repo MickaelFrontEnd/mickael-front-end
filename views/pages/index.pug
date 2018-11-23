@@ -1,0 +1,79 @@
+extends ../base/layout.pug
+block content
+  //- HERO 
+  section#me.hero.text-center
+    h1 
+      | Hello
+      br
+      | I'am RASOLOFONIAINA Mickael
+    p .NET Developer - Front End Developer - Blogger
+    img(src="img/icons/mouse.svg" width=50)
+  
+  //-  ABOUT
+  section#about.row(data-col="2")
+    .col.intro
+      h2.primary-color About me
+      p.primary-color Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+      a.btn.btn-primary(href="#") Donwload my CV
+    .col.social
+      a(href="#").item
+        img(src="img/icons/github-icon.svg" width=150)
+        span GITHUB
+      a(href="#").item
+        img(src="img/icons/linkedin.svg" width=150)
+      a(href="#").item
+        span CODEPEN
+        img(src="img/icons/codepen-icon.svg" width=150)
+  
+  //- SKILLS
+  section#skills.row(data-col="2")  
+    .col.tech
+      img(src="img/icons/css-3.svg" width=50)
+      img(src="img/icons/cssnext.svg" width=50)
+      img(src="img/icons/postcss.svg" width=50)
+      img(src="img/icons/html-5.svg" width=50)
+      img(src="img/icons/javascript.svg" width=50)
+    .col.card-inverse
+      h2.primary-color Skills
+      p.primary-color Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+  
+  //- EXP
+  section#exp
+    h2.text-center Experiences
+    .timeline
+      .timeline-container.right
+        .content
+          h2 2016
+          p Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+      .timeline-container.left
+        .content
+          h2 2015
+          p Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+      
+  
+  //- BLOG
+  section#blog.text-center  
+    h2 Blog
+    p Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+    img(src="img/icons/settings.svg" width=150)
+    img(src="img/icons/settings.svg" width=100)
+
+  //- CONTACT 
+
+  section#contact
+    h2.text-center Contact
+    form(action="#")
+      .form-item
+        label(for="name") Name*
+        input(type="text" placeholder="Enter your name here")
+      .form-item
+        label(for="name") Email*
+        input(type="text" placeholder="Enter your address email here")
+      .form-item
+        label(for="name") Subject*
+        input(type="text" placeholder="Enter the subject here")
+      .form-item
+        label(for="name") Message*
+        textarea(placeholder="Describe your message here" col="40" rows="10")
+      .form-item
+        a.btn.btn-secondary.block.text-center(href="#") Send
